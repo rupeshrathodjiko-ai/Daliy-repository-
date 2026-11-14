@@ -1,11 +1,32 @@
-<div align="center">
+# ApexSense — Free Fire Sensitivity & Pro Panels
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Device-calibrated Free Fire headshot sensitivity configurator (0–200 scale), side-by-side **Compare Devices** tool, and Pro Optimization Panels store with UPI QR checkout and an Owner Verification Panel.
 
-  <h1>Built with AI Studio</h2>
+## Tech Stack
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- **Frontend:** React 19, TypeScript, Vite, Tailwind CSS v4, Framer Motion (`motion/react`), Lucide Icons
+- **Backend:** Express (`server.ts`), QRCode generator, HMAC-signed order & owner auth tokens
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Local Development
 
-</div>
+```bash
+npm install
+npm run dev
+```
+
+App runs on `http://localhost:3000`.
+
+## Production Build & Start
+
+```bash
+npm install
+npm run build
+NODE_ENV=production npx tsx server.ts
+```
+
+## Environment Variables
+
+See `.env.example`:
+
+- `PORT` — Server port (defaults to `3000`)
+- `ORDER_SIGNING_SECRET` — Strong random secret string for HMAC token/order signing

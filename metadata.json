@@ -1,0 +1,6 @@
+{
+  "name": "ApexSense — Free Fire Sensitivity & Pro Optimization Panels",
+  "description": "Device-calibrated Free Fire headshot sensitivity configurator and pro mobile optimization panels with instant UPI QR checkout.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
